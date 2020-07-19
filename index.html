@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            #board {
+                border: 1px solid black;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 40%;
+                min-width: 300px;
+            }
+            #score-board {
+                text-align: center;
+            }
+
+            #game-end {
+                text-align: center;
+                width: 40vw;
+                font-size: 30px;
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                z-index: 1;
+                top: 30vh;
+                left: 30vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="score-board"></div>
+        <canvas id="board" width="500" height="500"></canvas>
+        <div id="game-end" style="visibility: collapse;background-color: whitesmoke;border: 1px solid black;">Game Over</div>
+        <script src="index.js"></script>
+        <script>
+            g=game();
+        </script>
+    </body>
+</html>
